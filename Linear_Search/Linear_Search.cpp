@@ -26,8 +26,10 @@ int main()
 	}
 	int desired;
 	cin >> desired;
-    if(linearSearch(array, num, desired) != -1)
-        cout << "Found" << endl;
+	int res= linearSearch(array, num, desired);
+
+    if( res != -1)
+        cout << "Found at pos" << res <<endl;
     else
         cout << "Number not found" << endl;
     return 0;
